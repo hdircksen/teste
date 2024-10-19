@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Memórias Escolares">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Memórias Helo de 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Memórias Escolares</h1>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('gallery')">Imagens</a></li>
+            <li><a href="#" onclick="showSection('info')">Informações</a></li>
+            <li><a href="#" onclick="showSection('menu')">Menu</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container" id="content">
+
+    <!-- Seção Imagens -->
+    <section class="gallery" id="gallery">
+        <div class="photo-section">
+            <img src="Chinelo.jpg" alt="Rafael de empregada da sala">
+        </div>
+        <div class="photo-section">
+            <img src="JuliaCamuflada.jpg" alt="Tentativa de camuflagem para pular o aquecimento em ed.fisica">
+        </div>
+        <div class="photo-section">
+            <img src="ÉosGuriDoGremio.jpg" alt="Aula de robótica sempre muito produtiva">
+        </div>
+        <div class="photo-section">
+            <img src="Comida.jpg" alt="Lanchinho pós escola">
+        </div>
+        <div class="photo-section">
+            <img src="AnaEHeloDeHaaland.jpeg" alt="no words, apenas Haaland">
+        </div>
+        <div class="photo-section">
+            <img src="ApresentaçãoDeQuimica.jpg" alt="brincadeirinhas pós apresentar para a escola inteira">
+        </div>
+    </section>
+
+    <!-- Seção Informações -->
+    <section class="info" id="info" style="display: none;">
+        <div class="overlay">
+            <h2>Chinelo trabalhador</h2>
+            <p>Aqui vemos uma imagem rara, Rafael trabalhando, omg.</p>
+        </div>
+        <div class="overlay">
+            <h2>Sedentarismo em 2024</h2>
+            <p>Julia sempre odiou exercícios físicos, logo decidiu pular o aquecimento de ed.fisica, porem sua tentativa foi falha e mesmo tentando se camuflar o professor tirou 0.5 de sua nota...</p>
+        </div>
+        <div class="overlay">
+            <h2>Apelidados por um dia de "os guri do gremio", só pq o gremio perdeu e me zoaram:( </h2>
+            <p>Foto tirada na aula de robótica, que como todas as aulas foi muito produtiva</p>
+        </div>
+        <div class="overlay">
+            <h2>Comida hmmmm</h2>
+            <p>Como todas as pessoas precisamos nos alimentar</p>
+        </div>
+        <div class="overlay">
+            <h2>Erling Haaland sempre presente nos momentos em sala</h2>
+            <p>Foto tirada com Ana banana</p>
+        </div>
+        <div class="overlay">
+            <h2>Helo toda poderosa e suas empregadas</h2>
+            <p>Após um longo dia de apresentaçoes finalmente Helo relaxou...</p>
+        </div>
+    </section>
+
+    <!-- Seção Menu -->
+    <section class="menu" id="menu" style="display: none;">
+        <div class="gallery">
+            <div class="photo-section">
+                <img src="Chinelo.jpg" alt="Rafael de empregada da sala" onclick="showInfo(1)" tabindex="0">
+                <div class="overlay">
+                    <h2>Chinelo trabalhador</h2>
+                    <p>Aqui vemos uma imagem rara, Rafael trabalhando, omg.</p>
+                </div>
+            </div>
+            <div class="photo-section">
+                <img src="JuliaCamuflada.jpg" alt="Tentativa de camuflagem para pular o aquecimento em ed.fisica" onclick="showInfo(2)" tabindex="0">
+                <div class="overlay">
+                    <h2>Sedentarismo em 2024</h2>
+                    <p>Julia sempre odiou exercícios físicos, logo decidiu pular o aquecimento de ed.fisica, porem sua tentativa foi falha e mesmo tentando se camuflar o professor tirou 0.5 de sua nota...</p>
+                </div>
+            </div>
+            <div class="photo-section">
+                <img src="ÉosGuriDoGremio.jpg" alt="Aula de robótica sempre muito produtiva" onclick="showInfo(3)" tabindex="0">
+                <div class="overlay">
+                    <h2>Apelidados por um dia de "os guri do gremio", só pq o gremio perdeu e me zoaram:( </h2>
+                    <p>Foto tirada na aula de robótica, que como todas as aulas foi muito produtiva</p>
+                </div>
+            </div>
+            <div class="photo-section">
+                <img src="Comida.jpg" alt="Lanchinho pós escola" onclick="showInfo(4)" tabindex="0">
+                <div class="overlay">
+                    <h2>Comida hmmmm</h2>
+                    <p>Como todas as pessoas precisamos nos alimentar</p>
+                </div>
+            </div>
+            <div class="photo-section">
+                <img src="AnaEHeloDeHaaland.jpeg" alt="no words, apenas Haaland." onclick="showInfo(5)" tabindex="0">
+                <div class="overlay">
+                    <h2>Erling Haaland sempre presente nos momentos em sala</h2>
+                    <p>Foto tirada com Ana banana</p>
+                </div>
+            </div>
+            <div class="photo-section">
+                <img src="ApresentaçãoDeQuimica.jpg" alt="brincadeirinhas pós apresentar para a escola inteira" onclick="showInfo(6)" tabindex="0">
+                <div class="overlay">
+                    <h2>Helo toda poderosa e suas empregadas</h2>
+                    <p>Após um longo dia de apresentaçoes finalmente Helo relaxou...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; Morelli 2024, Heloize Dircksen 3D - Todos os direitos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
